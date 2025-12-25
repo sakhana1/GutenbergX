@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GutenbergX – Home</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Shared + page styles -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+  <!-- Background image for home page -->
+  <div class="page-bg home-bg"></div>
+
+  <!-- Top navigation -->
+  <div class="nav-bar-wrap">
+    <header class="nav-bar">
+      <div class="logo">Gutenberg<span>X</span></div>
+      <nav class="nav-links">
+        <a href="index.html">Login</a>
+        <a href="home.html" class="active">Home</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <button class="nav-cta" onclick="location.href='profile.html'">
+          My Account
+        </button>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Main content -->
+  <main class="page-container home-layout">
+    <!-- Hero glass panel -->
+    <section class="glass-card hero-panel">
+      <div class="hero-inner">
+        <p class="hero-kicker">Featured Story</p>
+        <h1 class="hero-title">
+          Discover Your<br />
+          Next Great Read
+        </h1>
+        <p class="hero-subtitle">
+          Step into a curated library of timeless classics and enchanting tales,
+          beautifully reimagined for the digital age.
+        </p>
+        <button class="btn btn-primary hero-cta" onclick="location.href='books.html'">
+          Browse Books
+        </button>
+      </div>
+    </section>
+
+    <!-- Featured books row -->
+    <section class="featured-strip">
+      <div class="strip-header">
+        <h2>Featured Books</h2>
+        <a href="books.html" class="see-all-link">See all</a>
+      </div>
+
+      <div class="featured-cards">
+        <!-- Card 1 -->
+        <article class="book-card">
+          <div class="book-cover cover-1"></div>
+          <div class="book-meta">
+            <h3>The Time Machine</h3>
+            <p>H. G. Wells</p>
+            <button class="book-btn" onclick="location.href='reader.html'">
+              Read Now
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="book-card">
+          <div class="book-cover cover-2"></div>
+          <div class="book-meta">
+            <h3>Warrior of Obelisks</h3>
+            <p>Epic Fantasy</p>
+            <button class="book-btn" onclick="location.href='books.html'">
+              Read More
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="book-card">
+          <div class="book-cover cover-3"></div>
+          <div class="book-meta">
+            <h3>Alice in WonderRoad</h3>
+            <p>Lewis Carroll</p>
+            <button class="book-btn" onclick="location.href='books.html'">
+              Read More
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="book-card">
+          <div class="book-cover cover-4"></div>
+          <div class="book-meta">
+            <h3>Portrait of a Dreamer</h3>
+            <p>Classic Drama</p>
+            <button class="book-btn" onclick="location.href='books.html'">
+              Read More
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

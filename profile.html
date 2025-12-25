@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GutenbergX – Profile</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Shared + page styles -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/profile.css" />
+</head>
+<body>
+  <!-- Background image for profile page -->
+  <div class="page-bg profile-bg"></div>
+
+  <!-- Top navigation -->
+  <div class="nav-bar-wrap">
+    <header class="nav-bar">
+      <div class="logo">Gutenberg<span>X</span></div>
+      <nav class="nav-links">
+        <a href="index.html">Login</a>
+        <a href="home.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="about.html">About</a>
+        <button class="nav-cta" onclick="location.href='profile.html'">
+          My Account
+        </button>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Main profile layout -->
+  <main class="page-container profile-container">
+    <section class="glass-card profile-card">
+      <!-- Left: user info -->
+      <div class="profile-left">
+        <div class="profile-user">
+          <div class="avatar">
+            <img src="img/user-avatar.jpg" alt="User avatar" />
+          </div>
+          <div class="user-meta">
+            <h1 class="user-name">Alex Reader</h1>
+            <p class="user-tagline">Lover of classics & dark fantasy</p>
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat">
+            <span class="stat-number">24</span>
+            <span class="stat-label">Books Read</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">08</span>
+            <span class="stat-label">In Wishlist</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">03</span>
+            <span class="stat-label">In Progress</span>
+          </div>
+        </div>
+
+        <div class="plan-card">
+          <p class="plan-label">Current Plan</p>
+          <h2 class="plan-name">GutenbergX Premium</h2>
+          <p class="plan-desc">
+            Unlimited reading, audio editions, and offline downloads.
+          </p>
+          <button class="btn btn-primary" onclick="location.href='checkout.html'">
+            Pay Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: recent activity / settings -->
+      <div class="profile-right">
+        <section class="activity-section">
+          <h2 class="section-title">Recently Read</h2>
+          <div class="activity-list">
+            <article class="activity-item">
+              <div class="activity-cover cover-frankenstein"></div>
+              <div class="activity-meta">
+                <h3>Frankenstein</h3>
+                <p>Mary Shelley • 68% completed</p>
+              </div>
+              <button class="activity-btn" onclick="location.href='reader.html'">
+                Continue
+              </button>
+            </article>
+
+            <article class="activity-item">
+              <div class="activity-cover cover-dracula"></div>
+              <div class="activity-meta">
+                <h3>Dracula</h3>
+                <p>Bram Stoker • 22% completed</p>
+              </div>
+              <button class="activity-btn">
+                Continue
+              </button>
+            </article>
+
+            <article class="activity-item">
+              <div class="activity-cover cover-alice"></div>
+              <div class="activity-meta">
+                <h3>Alice in WonderRoad</h3>
+                <p>Lewis Carroll • Not started</p>
+              </div>
+              <button class="activity-btn" onclick="location.href='books.html'">
+                Start
+              </button>
+            </article>
+          </div>
+        </section>
+
+        <section class="settings-section">
+          <h2 class="section-title">Account Settings</h2>
+          <div class="settings-grid">
+            <button class="setting-pill">Edit Profile</button>
+            <button class="setting-pill">Reading Preferences</button>
+            <button class="setting-pill">Notifications</button>
+            <button class="setting-pill">Privacy</button>
+            <button class="setting-pill">Payment Methods</button>
+            <button class="setting-pill" onclick="location.href='index.html'">
+              Logout
+            </button>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

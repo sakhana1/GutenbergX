@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GutenbergX – Secure Checkout</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Shared + page styles -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/checkout.css" />
+</head>
+<body>
+  <!-- Background image for checkout page -->
+  <div class="page-bg checkout-bg"></div>
+
+  <!-- Top navigation -->
+  <div class="nav-bar-wrap">
+    <header class="nav-bar">
+      <div class="logo">Gutenberg<span>X</span></div>
+      <nav class="nav-links">
+        <a href="index.html">Login</a>
+        <a href="home.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="profile.html" class="active">Profile</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Main checkout layout -->
+  <main class="page-container checkout-container">
+    <section class="glass-card checkout-card">
+      <!-- Left: order summary -->
+      <div class="checkout-left">
+        <h1 class="checkout-title">Secure Checkout</h1>
+        
+        <div class="order-summary">
+          <div class="order-item">
+            <div class="item-cover checkout-cover-1"></div>
+            <div class="item-details">
+              <h3>GutenbergX Premium</h3>
+              <p>Annual Subscription</p>
+            </div>
+            <span class="item-price">$9.99</span>
+          </div>
+
+          <div class="order-total">
+            <span>Total</span>
+            <span class="total-price">$9.99</span>
+          </div>
+        </div>
+
+        <div class="payment-methods">
+          <label class="method-label">
+            <input type="radio" name="payment" checked />
+            <span>Credit/Debit Card</span>
+          </label>
+          <label class="method-label">
+            <input type="radio" name="payment" />
+            <span>UPI</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Right: payment form -->
+      <div class="checkout-right">
+        <div class="payment-form">
+          <div class="field-group">
+            <label>Card Number</label>
+            <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" />
+          </div>
+
+          <div class="card-row">
+            <div class="field-group">
+              <label>Expiry</label>
+              <input type="text" placeholder="MM/YY" maxlength="5" />
+            </div>
+            <div class="field-group">
+              <label>CVV</label>
+              <input type="text" placeholder="123" maxlength="4" />
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label>Name on Card</label>
+            <input type="text" placeholder="John Doe" />
+          </div>
+
+          <button class="btn btn-success checkout-cta">Pay Now $9.99</button>
+
+          <div class="security-notice">
+            <span>🔒</span>
+            <span>Your payment is secured with 256-bit SSL encryption</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

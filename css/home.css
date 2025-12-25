@@ -1,0 +1,150 @@
+/* Background image for home page */
+.home-bg {
+  background-image: url("../img/home-bg.jpg"); /* your Home page background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Layout container */
+.home-layout {
+  width: min(1120px, 94vw);
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+/* Hero glass panel */
+.hero-panel {
+  width: 100%;
+  max-width: 520px;
+  padding: 34px 34px 32px;
+  margin-bottom: 26px;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-kicker {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 8px;
+}
+
+.hero-title {
+  font-family: "Cinzel", serif;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.82);
+  margin-bottom: 18px;
+  max-width: 360px;
+}
+
+.hero-cta {
+  width: 160px;
+}
+
+/* Featured book strip */
+.featured-strip {
+  margin-top: 10px;
+  padding: 16px 0 4px;
+}
+
+.strip-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.strip-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.see-all-link {
+  font-size: 13px;
+  color: #ffe9b3;
+  text-decoration: none;
+}
+
+/* Featured cards grid */
+.featured-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+/* Single book card */
+.book-card {
+  background: rgba(11, 7, 20, 0.9);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.85);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-cover {
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Replace these with your real images in /img */
+.cover-1 { background-image: url("../img/book-time-machine.jpg"); }
+.cover-2 { background-image: url("../img/book-warrior.jpg"); }
+.cover-3 { background-image: url("../img/book-alice.jpg"); }
+.cover-4 { background-image: url("../img/book-portrait.jpg"); }
+
+.book-meta {
+  padding: 10px 12px 12px;
+}
+
+.book-meta h3 {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.book-meta p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 8px;
+}
+
+.book-btn {
+  width: 100%;
+  border-radius: 999px;
+  border: none;
+  padding: 7px 0;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #f4b53e, #ffd87a, #ffcc45);
+  color: #2a1607;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .featured-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-panel {
+    max-width: none;
+  }
+  .featured-cards {
+    grid-template-columns: 1fr;
+  }
+}

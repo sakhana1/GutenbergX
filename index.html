@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GutenbergX – Login</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Shared + page styles -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+  <!-- Background image wrapper -->
+  <div class="page-bg login-bg"></div>
+
+  <!-- Top navigation -->
+  <div class="nav-bar-wrap">
+    <header class="nav-bar">
+      <div class="logo">Gutenberg<span>X</span></div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Login</a>
+        <a href="home.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <button class="nav-cta" onclick="location.href='profile.html'">
+          My Account
+        </button>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Center login card -->
+  <main class="page-container">
+    <section class="glass-card login-card">
+      <div class="login-inner">
+        <h1 class="login-title">
+          Welcome to<br />
+          Gutenberg<span class="accent-x">X</span>
+        </h1>
+
+        <form class="login-form">
+          <div class="field-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required />
+          </div>
+
+          <div class="field-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter your password" required />
+          </div>
+
+          <div class="form-footer">
+            <label class="remember">
+              <input type="checkbox" /> Remember me
+            </label>
+            <a href="#" class="forgot-link">Forgot Password?</a>
+          </div>
+
+          <div class="btn-row">
+            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="button" class="btn btn-secondary" onclick="location.href='home.html'">
+              Register Now
+            </button>
+          </div>
+
+          <div class="social-row">
+            <span class="social-label">or login with</span>
+            <div class="social-buttons">
+              <button type="button" class="social-btn google">G</button>
+              <button type="button" class="social-btn facebook">f</button>
+              <button type="button" class="social-btn linkedin">in</button>
+            </div>
+          </div>
+
+          <p class="login-note">
+            Secure access to a world of timeless classics.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+</html>

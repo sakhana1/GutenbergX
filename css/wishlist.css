@@ -1,0 +1,136 @@
+/* Background image for wishlist page */
+.wishlist-bg {
+  background-image: url("../img/wishlist-bg.jpg"); /* your Wishlist background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Container */
+.wishlist-container {
+  width: min(1180px, 96vw);
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+/* Two-column glass card */
+.wishlist-card {
+  display: grid;
+  grid-template-columns: 1.2fr 1.6fr;
+  gap: 24px;
+  padding: 24px 24px 22px;
+}
+
+/* LEFT – wishlist list */
+.wishlist-left {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.wishlist-title {
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+}
+
+.wishlist-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wish-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 10px;
+  border-radius: 14px;
+  background: rgba(11, 7, 20, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 8px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.8);
+}
+
+.wish-cover {
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Replace with your own images */
+.wish-cover-1 { background-image: url("../img/wish-dracula.jpg"); }
+.wish-cover-2 { background-image: url("../img/wish-forest-tales.jpg"); }
+.wish-cover-3 { background-image: url("../img/wish-golden-dunes.jpg"); }
+
+.wish-meta h3 {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.wish-meta p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 6px;
+}
+
+.wish-btn {
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: none;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  background: rgba(40, 22, 30, 0.95);
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* RIGHT – preview panel */
+.wishlist-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.preview-header {
+  margin-bottom: 4px;
+}
+
+.preview-title {
+  font-family: "Cinzel", serif;
+  font-size: 22px;
+}
+
+.preview-author {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/* Description box */
+.preview-body {
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(250, 244, 232, 0.98);
+  color: #221208;
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 150px;
+}
+
+/* Action buttons */
+.preview-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.preview-actions .btn {
+  padding-inline: 18px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .wishlist-card {
+    grid-template-columns: 1fr;
+  }
+}

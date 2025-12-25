@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GutenbergX – Reader</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Shared + page styles -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/reader.css" />
+</head>
+<body>
+  <!-- Background image for reader page -->
+  <div class="page-bg reader-bg"></div>
+
+  <!-- Top navigation -->
+  <div class="nav-bar-wrap">
+    <header class="nav-bar">
+      <div class="logo">Gutenberg<span>X</span></div>
+      <nav class="nav-links">
+        <a href="index.html">Login</a>
+        <a href="home.html">Home</a>
+        <a href="books.html" class="active">Books</a>
+        <a href="about.html">About</a>
+        <button class="nav-cta" onclick="location.href='profile.html'">
+          My Account
+        </button>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Main reader layout -->
+  <main class="page-container reader-container">
+    <section class="glass-card reader-card">
+      <!-- Left column: book cover and actions -->
+      <div class="reader-left">
+        <div class="reader-cover">
+          <img src="img/book-frankenstein.jpg" alt="Frankenstein cover" />
+        </div>
+
+        <div class="reader-actions">
+          <button class="btn btn-primary">Page Widgets</button>
+          <button class="btn btn-secondary">Save</button>
+          <button class="btn btn-secondary">Download</button>
+        </div>
+
+        <div class="reader-bottom-actions">
+          <button class="reader-cta">Previous</button>
+          <button class="reader-cta">Listen</button>
+          <button class="reader-cta">Download</button>
+          <button class="reader-cta">More</button>
+        </div>
+      </div>
+
+      <!-- Right column: text and controls -->
+      <div class="reader-right">
+        <header class="reader-header">
+          <div>
+            <h1 class="reader-title">Frankenstein</h1>
+            <p class="reader-author">by Mary Shelley</p>
+          </div>
+          <div class="reader-tools">
+            <button class="icon-btn">A+</button>
+            <button class="icon-btn">☼</button>
+            <button class="icon-btn">⚙</button>
+          </div>
+        </header>
+
+        <div class="reader-text">
+          <p>
+            The winter passed away in this manner, and the birth of spring
+            appeared to shed double warmth and cheerfulness on the hearts of the
+            villagers. It was one of those March days when the sun shines warm
+            and the wind blows cold.
+          </p>
+          <p>
+            I saw the young girl knitting, and the old man reading near the
+            window, while the youth tended to the quiet cottage. The news from
+            the city spoke of scientific marvels that seemed to blur the line
+            between life and death.
+          </p>
+        </div>
+
+        <div class="reader-progress">
+          <span>04:07</span>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 40%;"></div>
+          </div>
+          <span>12:10</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

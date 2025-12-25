@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GutenbergX – Wishlist</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Shared + page styles -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/wishlist.css" />
+</head>
+<body>
+  <!-- Background image for wishlist page -->
+  <div class="page-bg wishlist-bg"></div>
+
+  <!-- Top navigation -->
+  <div class="nav-bar-wrap">
+    <header class="nav-bar">
+      <div class="logo">Gutenberg<span>X</span></div>
+      <nav class="nav-links">
+        <a href="index.html">Login</a>
+        <a href="home.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="wishlist.html" class="active">Wishlist</a>
+        <a href="about.html">About</a>
+        <button class="nav-cta" onclick="location.href='profile.html'">
+          My Account
+        </button>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Main wishlist layout -->
+  <main class="page-container wishlist-container">
+    <section class="glass-card wishlist-card">
+      <!-- Left: wishlist items -->
+      <div class="wishlist-left">
+        <h1 class="wishlist-title">My Wishlist</h1>
+
+        <div class="wishlist-grid">
+          <!-- Item 1 -->
+          <article class="wish-item">
+            <div class="wish-cover wish-cover-1"></div>
+            <div class="wish-meta">
+              <h3>Dracula</h3>
+              <p>Horror</p>
+              <button class="wish-btn">Remove</button>
+            </div>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="wish-item">
+            <div class="wish-cover wish-cover-2"></div>
+            <div class="wish-meta">
+              <h3>Forest Tales</h3>
+              <p>Adventure</p>
+              <button class="wish-btn">Remove</button>
+            </div>
+          </article>
+
+          <!-- Item 3 -->
+          <article class="wish-item">
+            <div class="wish-cover wish-cover-3"></div>
+            <div class="wish-meta">
+              <h3>Golden Dunes</h3>
+              <p>Epic</p>
+              <button class="wish-btn">Remove</button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Right: highlighted preview -->
+      <div class="wishlist-right">
+        <header class="preview-header">
+          <h2 class="preview-title">Frankenstein</h2>
+          <p class="preview-author">by Mary Shelley</p>
+        </header>
+
+        <div class="preview-body">
+          <p>
+            In a quiet Swiss village beneath towering mountains, a brilliant
+            scientist dares to challenge the very nature of life itself. His
+            experiment awakens a being that will change his fate forever.
+          </p>
+          <p>
+            Add this classic to your library to keep reading, enjoy the immersive
+            audio narration, or download it for offline journeys.
+          </p>
+        </div>
+
+        <div class="preview-actions">
+          <button class="btn btn-primary" onclick="location.href='reader.html'">
+            Start Reading
+          </button>
+          <button class="btn btn-secondary">Listen</button>
+          <button class="btn btn-secondary">Download</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,236 @@
+/* Background for profile page */
+.profile-bg {
+  background-image: url("../img/profile-bg.jpg"); /* your profile background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Container */
+.profile-container {
+  width: min(1180px, 96vw);
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+/* Two-column glass card */
+.profile-card {
+  display: grid;
+  grid-template-columns: 1.1fr 1.6fr;
+  gap: 24px;
+  padding: 24px 24px 22px;
+}
+
+/* LEFT – user info */
+.profile-left {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* User header */
+.profile-user {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.85);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.user-name {
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+}
+
+.user-tagline {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Stats row */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.stat {
+  padding: 10px 10px 8px;
+  border-radius: 14px;
+  background: rgba(11, 7, 20, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.85);
+}
+
+.stat-number {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.stat-label {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Plan card */
+.plan-card {
+  margin-top: 4px;
+  padding: 14px 14px 12px;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    rgba(244, 181, 62, 0.16),
+    rgba(255, 216, 122, 0.08),
+    rgba(10, 5, 18, 0.9)
+  );
+  border: 1px solid rgba(255, 223, 160, 0.7);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.9);
+}
+
+.plan-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 4px;
+}
+
+.plan-name {
+  font-family: "Cinzel", serif;
+  font-size: 18px;
+}
+
+.plan-desc {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 6px 0 12px;
+}
+
+/* RIGHT – activity and settings */
+.profile-right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.section-title {
+  font-family: "Cinzel", serif;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+/* Recently read list */
+.activity-section {
+  padding: 10px 12px 12px;
+  border-radius: 16px;
+  background: rgba(11, 7, 20, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.9);
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.activity-item {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.activity-cover {
+  height: 60px;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Map these to your existing images */
+.cover-frankenstein { background-image: url("../img/book-frankenstein.jpg"); }
+.cover-dracula      { background-image: url("../img/wish-dracula.jpg"); }
+.cover-alice        { background-image: url("../img/book-alice.jpg"); }
+
+.activity-meta h3 {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.activity-meta p {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.activity-btn {
+  border-radius: 999px;
+  border: none;
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #f4b53e, #ffd87a, #ffcc45);
+  color: #2a1607;
+}
+
+/* Settings chips */
+.settings-section {
+  padding: 10px 12px 12px;
+  border-radius: 16px;
+  background: rgba(11, 7, 20, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.9);
+}
+
+.settings-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.setting-pill {
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  padding: 6px 12px;
+  font-size: 11px;
+  cursor: pointer;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .profile-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

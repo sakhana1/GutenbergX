@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GutenbergX – Books</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Shared + page styles -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/books.css" />
+</head>
+<body>
+  <!-- Background image for books page -->
+  <div class="page-bg books-bg"></div>
+
+  <!-- Top navigation -->
+  <div class="nav-bar-wrap">
+    <header class="nav-bar">
+      <div class="logo">Gutenberg<span>X</span></div>
+      <nav class="nav-links">
+        <a href="index.html">Login</a>
+        <a href="home.html">Home</a>
+        <a href="books.html" class="active">Books</a>
+        <a href="about.html">About</a>
+        <button class="nav-cta" onclick="location.href='profile.html'">
+          My Account
+        </button>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Main content -->
+  <main class="page-container books-container">
+    <!-- Filter strip -->
+    <section class="glass-strip">
+      <div class="filters-left">
+        <span class="filters-label">Browse</span>
+        <h1 class="filters-title">Library</h1>
+      </div>
+
+      <div class="filters-tabs">
+        <button class="tab active">All</button>
+        <button class="tab">Science</button>
+        <button class="tab">Fiction</button>
+        <button class="tab">History</button>
+        <button class="tab">Kids</button>
+      </div>
+
+      <div class="filters-search">
+        <input type="text" placeholder="Search books..." />
+      </div>
+    </section>
+
+    <!-- Shelf of book cards -->
+    <section class="shelf">
+      <!-- Card 1 -->
+      <article class="shelf-card">
+        <div class="shelf-cover shelf-cover-1"></div>
+        <div class="shelf-body">
+          <div class="shelf-meta">
+            <h3>The Time Machine</h3>
+            <p>H. G. Wells</p>
+          </div>
+          <button class="shelf-btn" onclick="location.href='reader.html'">
+            Read More
+          </button>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="shelf-card">
+        <div class="shelf-cover shelf-cover-2"></div>
+        <div class="shelf-body">
+          <div class="shelf-meta">
+            <h3>Wizards of Obelisks</h3>
+            <p>Epic Fantasy</p>
+          </div>
+          <button class="shelf-btn">Read More</button>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="shelf-card">
+        <div class="shelf-cover shelf-cover-3"></div>
+        <div class="shelf-body">
+          <div class="shelf-meta">
+            <h3>Historical Voyagers</h3>
+            <p>History</p>
+          </div>
+          <button class="shelf-btn">Read More</button>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="shelf-card">
+        <div class="shelf-cover shelf-cover-4"></div>
+        <div class="shelf-body">
+          <div class="shelf-meta">
+            <h3>Green Myths</h3>
+            <p>Mythology</p>
+          </div>
+          <button class="shelf-btn">Read More</button>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="shelf-card">
+        <div class="shelf-cover shelf-cover-5"></div>
+        <div class="shelf-body">
+          <div class="shelf-meta">
+            <h3>The Prejudice</h3>
+            <p>Classic Romance</p>
+          </div>
+          <button class="shelf-btn">Read More</button>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="shelf-card">
+        <div class="shelf-cover shelf-cover-6"></div>
+        <div class="shelf-body">
+          <div class="shelf-meta">
+            <h3>Kids' Tales</h3>
+            <p>Children</p>
+          </div>
+          <button class="shelf-btn">Read More</button>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+<script src="js/books.js"></script>
+
+</body>
+</html>
