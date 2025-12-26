@@ -35,3 +35,12 @@ and aims to reimagine classic literature in a modern, cinematic reading experien
 Responsive design principles
 
 Google Fonts for typography
+
+
+**Author**
+
+**Name :** Sakhana J
+
+**Project :** GutenbergX
+
+**Hackathon :** TechPulse by ERON
